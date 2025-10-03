@@ -1,0 +1,153 @@
+{
+  "name": "Meet - Video Conferencing",
+  "short_name": "Meet",
+  "description": "Professional video conferencing application for seamless communication",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "theme_color": "#1c1c1c",
+  "background_color": "#1c1c1c",
+  "scope": "/",
+  "lang": "en",
+  "dir": "ltr",
+  "categories": ["productivity", "communication", "business"],
+  "icons": [
+    {
+      "src": "/icons/Video.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/Video.svg",
+      "sizes": "48x48",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/Video.svg",
+      "sizes": "72x72",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/Video.svg",
+      "sizes": "96x96",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/Video.svg",
+      "sizes": "144x144",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/Video.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/Video.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/Video.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/icons/Video.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "New Meeting",
+      "short_name": "New Meeting",
+      "description": "Start a new video meeting",
+      "url": "/?action=new-meeting",
+      "icons": [
+        {
+          "src": "/icons/add-meeting.svg",
+          "sizes": "96x96",
+          "type": "image/svg+xml"
+        }
+      ]
+    },
+    {
+      "name": "Join Meeting",
+      "short_name": "Join",
+      "description": "Join an existing meeting",
+      "url": "/?action=join-meeting",
+      "icons": [
+        {
+          "src": "/icons/join-meeting.svg",
+          "sizes": "96x96",
+          "type": "image/svg+xml"
+        }
+      ]
+    },
+    {
+      "name": "Schedule Meeting",
+      "short_name": "Schedule",
+      "description": "Schedule a meeting for later",
+      "url": "/?action=schedule-meeting",
+      "icons": [
+        {
+          "src": "/icons/schedule.svg",
+          "sizes": "96x96",
+          "type": "image/svg+xml"
+        }
+      ]
+    },
+    {
+      "name": "Personal Room",
+      "short_name": "Personal",
+      "description": "Access your personal meeting room",
+      "url": "/personal-room",
+      "icons": [
+        {
+          "src": "/icons/add-personal.svg",
+          "sizes": "96x96",
+          "type": "image/svg+xml"
+        }
+      ]
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/images/screenshot-wide.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Meet video conferencing interface"
+    },
+    {
+      "src": "/images/screenshot-narrow.png",
+      "sizes": "720x1280",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Meet mobile interface"
+    }
+  ],
+  "prefer_related_applications": false,
+  "edge_side_panel": {
+    "preferred_width": 400
+  },
+  "launch_handler": {
+    "client_mode": "navigate-existing"
+  },
+  "protocol_handlers": [
+    {
+      "protocol": "web+meet",
+      "url": "/meeting/%s"
+    }
+  ]
+}
